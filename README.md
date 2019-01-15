@@ -16,6 +16,14 @@ Você também precisará ter software instalado para rodar e executar um [Jupyte
 
 Se você ainda não tem o Python instalado, é altamente recomendado que instale a distribuição [Anaconda](http://continuum.io/downloads), que já tem os pacotes acima incluídos. Certifique-se de selecionar o instalador Python 2.7, não o 3.x.
 
+Você pode criar um ambiente virtual no conda com o Python 2.7 junto com a versão usada do scikit-learn, basta rodar no seu terminal conda:
+
+```bash
+conda create -n python27 python=2.7 anaconda scikit-learn==0.18.2
+```
+
+Esse código criará um ambiente virtual chamado python27 e poderá rodar todos os códigos do projeto sem problemas.
+
 ### Código
 
 Um modelo do código é fornecido no arquivo notebook `boston_housing_PT.ipynb`. Você também precisará usar o arquivo Python `visuals.py` e o arquivo de dados `housing.csv` para completar seu trabalho. Mesmo que parte do código já tenha sido fornecida para ajudá-lo a começar, você precisará implementar funcionalidades adicionais em alguns pontos para conseguir completar o projeto com sucesso. Note que o código incluído em `visuals.py` foi feito para ser utilizado do jeito que está, sem manipulação por parte dos estudantes. Mas, se você estiver interessado em saber como as visualizações são criadas no notebook, fique à vontade para explorar esse arquivo Python.
